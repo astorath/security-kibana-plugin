@@ -33,7 +33,7 @@ export class ProxyAuthRoutes {
   public setupRoutes() {
     this.router.get(
       {
-        path: `/auth/proxy/login`,
+        path: `/auth/login`,
         validate: {
           query: schema.object({
             nextUrl: schema.maybe(
@@ -74,7 +74,7 @@ export class ProxyAuthRoutes {
 
     this.router.post(
       {
-        path: `/auth/proxy/logout`,
+        path: `/auth/logout`,
         validate: false,
       },
       async (context, request, response) => {

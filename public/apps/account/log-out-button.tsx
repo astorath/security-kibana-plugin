@@ -38,7 +38,7 @@ export function LogoutButton(props: {
         </EuiButtonEmpty>
       </div>
     );
-  } else if (props.authType === 'proxy') {
+  } else if (props.authType === 'proxy' && !props.logoutUrl) {
     return <div />;
   } else {
     return (
